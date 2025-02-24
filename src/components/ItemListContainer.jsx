@@ -1,7 +1,7 @@
 const ItemListContainer = (props) => {
     console.log (props)
     return (
-        <div>
+        <div className="greeting">
             <h1>
                 {props.greeting}
             </h1>
