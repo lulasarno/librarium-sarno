@@ -4,7 +4,7 @@ const NavbarComponent = () => {
     return (
         <nav className="navContainer">
             <a className="navlink" href="">
-                <img src="./librarium-logo.png" alt="" className="logo" />
+                <img src="/librarium-sarno/public/librarium-removebg-preview.png" alt="" className="logo" />
             </a>
             <a className="navlink" href="">Nosotros</a>
             <a className="navlink" href="">Libros</a>

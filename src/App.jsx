@@ -1,6 +1,8 @@
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer'
 import NavbarComponent from './components/NavbarComponent'
+
 
 function App() {
   
@@ -9,6 +11,7 @@ function App() {
     <>
       <NavbarComponent/>
       <ItemListContainer greeting= 'BIENVENIDOS' />
+    
     </>
   )
 }
