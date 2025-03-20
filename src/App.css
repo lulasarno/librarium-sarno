@@ -1,31 +1,32 @@
 * { 
-  margin: 0; 
-  padding: 0;
   box-sizing: border-box;
 }
 
-body { 
-  background-color: #f1f0ee;
+
+main{ 
+  border-top: solid black 1px;
 }
 
-nav{
-  border-bottom: 1px solid black; 
-  display: flex;
-  padding: 20px;
-  align-items: center;
-  width: 100%;
-  gap: 50px  
+nav { 
+  background-color: rgb(255, 255, 255);
 }
 
-.navlink { 
-  padding: 20px;
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  text-decoration: none;
+.greeting { 
+  background-color: rgb(0, 0, 0);
+}
+
+.greeting p { 
+  color: white;
+  font-family:  "Quicksand", sans-serif;
+  font-size: 25px;
 }
 
 .logo { 
   height: 10rem;
+}
+
+.cart-container{
+  margin-right: 100px;
 }
 
 .carrito-logo { 
@@ -36,6 +37,140 @@ nav{
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 
+.navbar, .navbar-nav, .navbar-link {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px; 
+  margin-left: 30px;
+}
+
+.nav-item{
+  margin-right: 40px;
+
+}
+
+
+.card{ 
+  margin: 7px;
+  max-width: 302px; 
+}
+
+.card-body { 
+  border-top: rgb(190, 190, 190) solid 1px; 
+}
+
+
+.card-title, .card-autor, .card-text, .btn-mas  { 
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif; 
+
+}
+
+.card-title { 
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-autor {
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+.card-text{ 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-mas {
+  background-color: rgb(0, 0, 0);
+  border: solid black 1px; 
+  width: 170px; 
+  margin-left: 46px;
+  padding: 8px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.detail-container{ 
+  display: flex;
+  flex-wrap: wrap; 
+  
+}
+
+.product-name h1{
+  font-size: 30px;
+ 
+  font-family: "Quicksand", sans-serif; 
+  background-color: black;
+  padding: 30px;
+  color: white;
+}
+
+.detail-container img{ 
+  max-height: 800px;
+  align-items: center;
+  margin: 40px;
+}
+
+.description-container{ 
+  height: 200px;
+  margin-top: 100px;
+  font-family: "Quicksand", sans-serif; 
+  padding: 40px;
+  font-size: 1.5rem;
+}
+
+.counter-container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
+.btn-dark{
+  color: white;
+  background-color: rgb(194, 77, 31);
+  width: 30px;
+  margin: 15px;
+  border-radius: 10px;
+  
+}
+
+.btn-add-cart { 
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0); 
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1000px) {
+  .description-container{ 
+    height: 200px;
+    margin-top: 0px;
+    font-family: "Quicksand", sans-serif; 
+    padding: 40px;
+    font-size: 1.5rem;
+  }
+
+  .detail-container img{ 
+    max-height: 400px;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .counter-container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    
+  }
+
+}

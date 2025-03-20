@@ -1,27 +1,35 @@
 import { useEffect, useState } from "react"
 import { getProducts } from "../mock/asyncData"
 import ItemList from "./ItemList"
+import { useParams } from "react-router-dom"
 
 const ItemListContainer = ({greeting}) => {
     const [data, setData] = useState ([]) 
+    const [loading, setLoading] = useState(false) 
+    const {categoryId} = useParams()
 
     
     useEffect(()=>{
+        setLoading(true)
         getProducts()
-        .then((res)=> setData(res))
-        .catch((error)=> console.log (error) )
-    },[])    
+        .then((res)=> {
+            if(categoryId){
+                setData(res.filter((item) => item.category === categoryId))
+            }else{
+                setData(res)
+            }
+        })
+    },[categoryId])    
     
     console.log (data)
 
     return (
         <main>
             <div className="greeting">
-                <h1>
-                    {greeting}
-                </h1>
+                <p>
+                    {greeting}{categoryId && <span style={{textTransform:'capitalize'}} > {categoryId}</span>}
+                </p>
             </div>
-
             <div>
                <ItemList data={data}/>
             </div>
