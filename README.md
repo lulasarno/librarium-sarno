@@ -2,7 +2,8 @@
 # 📚 Librarium
 Librarium es una aplicación web de comercio electrónico desarrollada con React y basada en JavaScript, que simula la experiencia de una librería online. Diseñada para ofrecer una navegación rápida, intuitiva y atractiva, esta plataforma permite a los usuarios explorar, buscar y comprar libros desde cualquier lugar.
 
-## [🌐​Sitio web](/public/librarium-inicio.JPG)
+## [🌐 ​Sitio web]()
+![image](/public/librarium-inicio.JPG)
 
 ### ⚙️​ Instalacion 
 1. Clone el repositorio 
