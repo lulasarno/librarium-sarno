@@ -1,8 +1,18 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📚 Librarium
+Librarium es una aplicación web de comercio electrónico desarrollada con React y basada en JavaScript, que simula la experiencia de una librería online. Diseñada para ofrecer una navegación rápida, intuitiva y atractiva, esta plataforma permite a los usuarios explorar, buscar y comprar libros desde cualquier lugar.
 
-Currently, two official plugins are available:
+## [🌐​Sitio web](/public/librarium-inicio.JPG)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ⚙️​ Instalacion 
+1. Clone el repositorio 
+2. Ejecute el comando `cd librarium-sarno` para moverse a la carpeta del proyecto 
+3. Instale dependencias ejecutando `npm install` 
+4. Para levantar la app en un servidor local ejecute `npm run dev`
+
+### 🛠️ Librerias 
+- [React Boostrap](https://react-bootstrap.netlify.app/)
+- [Firebase](https://console.firebase.google.com/u/3/?hl=es-419) 
+- [React Router Dom](https://reactrouter.com/) 
+
+#### Desarrollado por​ ​Lula🍓 ​ 

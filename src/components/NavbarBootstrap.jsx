@@ -4,8 +4,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../components/CartWidget'
 import { NavLink } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 function NavbarBootstrap() {
+  const {cart}= useCart()
   return (
     <Navbar collapseOnSelect expand="lg" className="">
         <Navbar.Brand as={NavLink} to='/'>
@@ -29,10 +31,8 @@ function NavbarBootstrap() {
             </NavDropdown>            
             <Nav.Link as={NavLink} to='/ebooks/' className='nav-item'>eBooks</Nav.Link>
           </Nav>
-          <Nav className='cart-container'>
-            <Nav.Link as={NavLink} to='/'>
-              <CartWidget/>
-            </Nav.Link>
+          <Nav className='cart-container'>  
+            <Nav.Link as={NavLink} to='/cart'> <CartWidget/></Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>

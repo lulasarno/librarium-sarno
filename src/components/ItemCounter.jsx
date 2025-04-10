@@ -23,9 +23,9 @@ const ItemCounter = ({stock, onAdd}) => {
     return ( 
         <div>
             <div className='btn-count'>
-                <button className='btn-dark' onClick={substract}> - </button>
+                <button className='btn-red' onClick={substract}> - </button>
                 <span className='btn-contador'> {count} </span>
-                <button className='btn-dark' onClick={add}> + </button>
+                <button className='btn-red' onClick={add}> + </button>
             </div>
             <div>
                 <button className='btn-add-cart' disabled={stock === 0} onClick={addToCart}> Agregar al carrito</button>

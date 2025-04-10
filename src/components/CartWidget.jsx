@@ -1,10 +1,16 @@
+import { useContext } from "react"
+import { CartContext } from "../context/CartContext"
+
 const CartWidget = () => {
+    const {cartQuantity} = useContext(CartContext)
+    
+    
     return(
         <div className="carrito-container"> 
             <span>
-                <img src="./carrito-de-compras.png" alt="" className="carrito-logo"/>
+                <img src="/public/carrito-de-compras.png" alt="" className="carrito-logo"/>
             </span>
-            <span> 5 </span>
+            { cartQuantity() > 0 && <span>{cartQuantity()}</span>}
         </div>
     )
 } 
