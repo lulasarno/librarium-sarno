@@ -5,7 +5,6 @@ import { useCart } from '../context/CartContext';
 const CartItem = ({compra}) => { 
     const {removeItem} = useCart() 
 
-
     return ( 
         <div>
             <div className='incart-item'> 

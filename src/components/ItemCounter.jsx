@@ -2,23 +2,19 @@ import React, { useState } from 'react';
 
 const ItemCounter = ({stock, onAdd}) => { 
     const [count, setCount]= useState(1)
-   
     const add = () => { 
         if(count < stock){
             setCount (count + 1) 
         }
     }
-    
     const substract = () => {
         if (count > 0){
             setCount(count - 1)
         }
     }
-    
     const addToCart = () => { 
         onAdd(count)
     }
-
 
     return ( 
         <div>
@@ -30,7 +26,6 @@ const ItemCounter = ({stock, onAdd}) => {
             <div>
                 <button className='btn-add-cart' disabled={stock === 0} onClick={addToCart}> Agregar al carrito</button>
             </div>
-            
         </div> 
     )
 }

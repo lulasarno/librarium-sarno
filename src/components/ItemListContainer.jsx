@@ -31,7 +31,6 @@ const ItemListContainer = ({greeting}) => {
         .finally(()=> setLoading(false))
     },[categoryId])
 
-
     return (
         <main>
             <div className="greeting">
@@ -43,9 +42,7 @@ const ItemListContainer = ({greeting}) => {
                {loading ? <LoaderComponent/> : <ItemList data = {data}/>}
                
             </div>
-
         </main>
-
     )
 }
 

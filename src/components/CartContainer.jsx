@@ -5,6 +5,7 @@ import EmptyCart from './EmptyCart';
 
 const CartContainer = () => { 
     const {cart} =  useCart()
+    
     return (
         <div>
             {

@@ -15,5 +15,6 @@ Librarium es una aplicación web de comercio electrónico desarrollada con React
 - [React Boostrap](https://react-bootstrap.netlify.app/)
 - [Firebase](https://console.firebase.google.com/u/3/?hl=es-419) 
 - [React Router Dom](https://reactrouter.com/) 
+- [React Hook Form](https://www.react-hook-form.com/get-started/)
 
-#### Desarrollado por​ ​Lula🍓 ​ 
+###### Desarrollado por​ ​Lula🍓 ​ 
