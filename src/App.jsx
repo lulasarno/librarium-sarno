@@ -7,7 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import { CartProvider } from './context/CartContext';
 import CartContainer from './components/CartContainer';
 import CheckoutForm from './components/CheckoutForm';
-import Nosotros from './components/nosotros';
+import Nosotros from './components/Nosotros';
 import Ebooks from './components/Ebooks';
 
 
