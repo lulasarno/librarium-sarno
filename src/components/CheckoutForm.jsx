@@ -34,10 +34,15 @@ const CheckoutForm = () => {
     return (
         <>
             {orderId ? (
-                <div>
-                    <h2>Compra realizada!</h2>
-                    <h4>Su id es: {orderId}</h4>
-                    <Link className='btn btn-dark' to='/'>Volver al inicio</Link>
+                <div className='ordersuccess'>
+                    <div>
+                        <h2>Compra realizada!</h2>
+                        <h4>Su id es: {orderId}</h4>
+                    </div>
+                    <div className='btn-volver-container'>
+                        <Link className='btn-volver' to='/'>Volver al inicio</Link>
+                    </div>
+                    
                 </div>
             ) : (
                 <div>
