@@ -113,7 +113,7 @@ const CheckoutForm = () => {
                             </button>
                         </div>
                         <div>
-                           <img src="./public/MiercolesdeAbril.png" alt="" /> 
+                           <img src="./MiercolesdeAbril.png" alt="" /> 
                         </div>
                     </form>                     
                 </div>

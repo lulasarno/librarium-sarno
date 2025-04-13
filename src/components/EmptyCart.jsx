@@ -10,7 +10,7 @@ const EmptyCart = () => {
                 <Link to = '/' className='btn btn-dark'>Ir al inicio</Link>
             </div>                    
             <div className='emptycart-img'>
-                <img src="./public/carro-vacio.png" alt="" />
+                <img src="./carro-vacio.png" alt="" />
             </div>      
         </div>
     )
