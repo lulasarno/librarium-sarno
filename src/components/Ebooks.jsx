@@ -10,7 +10,7 @@ const Ebooks = () => {
             </div>
             <div className='ebooks-container'>
                 <div >
-                    <p>Por el momento no contamos con stock </p>    
+                    <p>Por el momento no contamos con ebooks disponibles</p>    
                 </div>
                 <div className='ebook-btn-container'>
                     <Link className= 'ebooks-btn' to="/">Ir al inicio</Link>
