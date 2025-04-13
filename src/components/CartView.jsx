@@ -11,7 +11,10 @@ const CartView = () => {
             <h2>Tu carrito</h2>
             <div>
                 {cart.map((compra)=> <CartItem key={compra.id} compra={compra} /> )}
-                <span className='total'>Total: ${cartTotal()},00 </span>
+                <span className='total'>
+                    Total: ${cartTotal().toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                </span>
+
                 <div className='container-btn-fin'>
                     <Link className='btn btn-dark btn-fin' to='/' >Seguir comprando</Link> 
                     <button className='btn btn-danger btn-fin' onClick={clear}>Vaciar carrito</button>
